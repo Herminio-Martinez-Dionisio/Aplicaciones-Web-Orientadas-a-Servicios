@@ -17,5 +17,5 @@ decodificado = json.loads(codificado)
 print(decodificado[0]["volumeInfo"]["title"])
 print(decodificado[0]["volumeInfo"]["authors"])
 print(decodificado[0]["volumeInfo"]["imageLinks"]["thumbnail"])
-print(decodificado[2]["saleInfo"]["buyLink"])
+#print(decodificado[2]["saleInfo"]["buyLink"])
 #url_compra = ""#decoded[3]["saleInfo"]["buyLink"]

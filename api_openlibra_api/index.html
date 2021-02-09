@@ -1,0 +1,38 @@
+$def with(books)
+<html>
+    <head>
+    </head>
+    <body>
+        <form method="POST">
+            <label>Buscar libro</label></br>
+            <input type="text" name="book_name">
+            <button type="submit">Buscar</button>
+        </form>
+    </body>
+
+    $if books != None:
+        <table border="1">
+        $for book in books:  
+            <tr>
+                <th>ID</th><th>$book['id']</th>
+            </tr>
+            <tr>
+                <th>Titulo del libro</th><th>$book['titulo']</th>
+            </tr>
+            <tr>
+                <th>Autor del libro</th><th>$book['autor']</th>
+            </tr>
+            <tr>    
+                <th>Descripcion</th><th>$book['descripcion']</th>
+            </tr>
+            <tr>
+                <th>URL descarga</th><th><a target="blank" href="$book['url_descargar']">Enlace</a></th>
+            </tr>
+            <tr>
+                <th>imagen</th><th><img src="$book['url_imagen']"></th>
+            </tr>
+        </table>
+    
+    $else:
+      No hay datos a buscar
+</html>
