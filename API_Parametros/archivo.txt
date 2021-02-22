@@ -1,0 +1,3 @@
+Nombre:Herminio
+Fecha_nacimiento:2001-12-17
+Edad:20
